@@ -1,4 +1,5 @@
 import record from '@/router/modules/record'
+import table from '@/router/modules/table'
 
 export const constantRoutes = [
   {
@@ -17,6 +18,7 @@ export const constantRoutes = [
 
 export const asyncRoutes = [
   record,
+  table,
   {
     path: '/*',
     redirect: '/404'

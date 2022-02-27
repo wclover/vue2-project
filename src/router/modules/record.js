@@ -11,21 +11,7 @@ export default {
       path: 'index',
       name: 'RecordIndex',
       component: () => import('@/views/RecordIndex'),
-      meta: {title: '流程', icon: 'el-icon-location'}
-    },
-    {
-      path: 'test',
-      name: 'RecordTest',
-      component: () => import('@/views/RecordIndex/Test'),
-      meta: {title: '测试', icon: 'el-icon-document'},
-      children: [
-        {
-          path: 'index',
-          name: 'TestIndex',
-          component: () => import('@/views/RecordIndex'),
-          meta: {title: '测试中心', icon: 'el-icon-menu'}
-        }
-      ]
+      meta: {title: '记录', icon: 'el-icon-location'}
     }
   ]
 }
