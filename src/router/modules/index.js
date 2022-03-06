@@ -1,5 +1,6 @@
 import record from '@/router/modules/record'
 import table from '@/router/modules/table'
+import qiankunRecord from '@/router/modules/qiankunRecord'
 
 export const constantRoutes = [
   {
@@ -19,6 +20,7 @@ export const constantRoutes = [
 export const asyncRoutes = [
   record,
   table,
+  qiankunRecord,
   {
     path: '/*',
     redirect: '/404'

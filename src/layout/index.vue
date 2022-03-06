@@ -4,7 +4,8 @@
     <div class="app_layout_main">
       <nav-bar />
       <!--      <tags-view />-->
-      <app-main />
+      <div v-show="isQiankun" id="qiankun" />
+      <app-main v-show="!isQiankun" />
     </div>
   </div>
 </template>
@@ -14,9 +15,11 @@ import NavBar from '@/layout/NavBar/index'
 import SideBar from '@/layout/SideBar/index'
 // import TagsView from '@/layout/TagsView/index'
 import AppMain from '@/layout/AppMain/index'
+import QiankunMixin from './mixin/qiankun'
 export default {
   name: 'Layout',
-  components: {AppMain, SideBar, NavBar}
+  components: {AppMain, SideBar, NavBar},
+  mixins: [QiankunMixin]
 }
 </script>
 
