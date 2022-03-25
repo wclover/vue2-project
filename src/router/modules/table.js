@@ -18,6 +18,12 @@ export default {
       name: 'MergeTable',
       component: () => import('@/views/Table/MergeTable'),
       meta: {title: '合并表格', icon: 'el-icon-location'}
+    },
+    {
+      path: 'processBar',
+      name: 'ProgressBar',
+      component: () => import('@/views/Table/ProcessBar'),
+      meta: {title: '进度条', icon: 'el-icon-location'}
     }
   ]
 }
